@@ -9,6 +9,10 @@ description = "My first package"
 license = {file = "LICENSE.txt"}
 authors = [{name = "empa-course"}]
 
+dependencies = [
+  "pre-commit",
+]
+
 [project.optional-dependencies]
 dev = [
   "bumpver",
