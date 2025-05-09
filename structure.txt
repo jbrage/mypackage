@@ -2,11 +2,13 @@ README.md
 project.toml
 .pre-commit-config.yaml
 
+docs
+    documentation
+    figures
+
 data
     raw
     processed
-
-docs
 
 mypackage
     gui

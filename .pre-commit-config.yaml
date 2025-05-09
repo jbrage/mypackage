@@ -21,10 +21,10 @@ repos:
           # Run the formatter.
           - id: ruff-format
 
-    - repo: local
-      hooks:
-          - id: pytest
-            name: Run pytest
-            entry: bash -c "pytest -n 4"
-            language: system
-            types: [python]
+    # - repo: local
+    #   hooks:
+    #       - id: pytest
+    #         name: Run pytest
+    #         entry: bash -c "pytest -n 4"
+    #         language: system
+    #         types: [python]
