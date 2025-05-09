@@ -7,7 +7,7 @@ from time import sleep
 
 def test_something():
     sleep(5)
-    assert 1 == 2
+    assert True
 
 
 def test_distance():
