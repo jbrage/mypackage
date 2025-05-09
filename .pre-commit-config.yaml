@@ -1,6 +1,6 @@
 ---
 ci:
-    autoupdat_schedule: quarterly
+    autoupdate_schedule: quarterly
 
 repos:
     - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -17,10 +17,14 @@ repos:
       hooks:
           # Run the linter.
           - id: ruff
+            args: [ --fix ]
           # Run the formatter.
           - id: ruff-format
 
-    # - repo: https://github.com/pytest-dev/pytest
-    #   rev: 7.4.0  # Use the latest stable version
-    #   hooks:
-    #       - id: pytest
+    - repo: local
+      hooks:
+          - id: pytest
+            name: Run pytest
+            entry: bash -c "pytest -n 4"
+            language: system
+            types: [python]

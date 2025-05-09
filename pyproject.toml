@@ -11,6 +11,7 @@ authors = [{name = "empa-course"}]
 
 dependencies = [
   "pre-commit",
+  "pytest-xdist",
 ]
 
 [project.optional-dependencies]
