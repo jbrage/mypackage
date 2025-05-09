@@ -1,0 +1,34 @@
+README.md
+project.toml
+.pre-commit-config.yaml
+
+data
+    raw
+    processed
+
+docs
+
+mypackage
+    gui
+        gui_classes.py
+
+    stages
+        stage_control.py
+        __init__.py
+
+    camera
+        camera_control.py
+        image_reader.py
+        __init__.py
+
+    analyser
+        analyser.py
+        __init__.py
+
+tests
+    test_stages.py
+    test_camera.py
+    test_analyser.py
+
+
+% hide methods in classes
