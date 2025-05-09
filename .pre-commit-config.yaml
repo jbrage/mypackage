@@ -19,3 +19,8 @@ repos:
           - id: ruff
           # Run the formatter.
           - id: ruff-format
+
+    # - repo: https://github.com/pytest-dev/pytest
+    #   rev: 7.4.0  # Use the latest stable version
+    #   hooks:
+    #       - id: pytest
